@@ -151,7 +151,7 @@ Component1 As CanvasComponent:
 
     Gallery3 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =166
+        Height: =117
         Items: =Component1.Adminicon_menu
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -161,7 +161,7 @@ Component1 As CanvasComponent:
                 ThisItem.TargetScreen,
                 ScreenTransition.None
             )
-        TemplateSize: =76
+        TemplateSize: =49
         Visible: =ShowMenuadmin
         Width: =478
         X: =887
