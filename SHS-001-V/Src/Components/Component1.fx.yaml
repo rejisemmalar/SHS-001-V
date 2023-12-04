@@ -161,6 +161,7 @@ Component1 As CanvasComponent:
                 ThisItem.TargetScreen,
                 ScreenTransition.None
             )
+        TemplateFill: =If(ThisItem.Title=Component1.CurrentScreen,Color.Aquamarine,Color.White)
         TemplateSize: =49
         Visible: =ShowMenuadmin
         Width: =319
