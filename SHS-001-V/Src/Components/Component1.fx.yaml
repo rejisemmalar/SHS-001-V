@@ -92,7 +92,7 @@ Component1 As CanvasComponent:
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Semibold
             Height: =52
-            OnSelect: =
+            OnSelect: =Set(ShowMenu, !ShowMenu)
             Size: =25
             Text: ="A"
             Width: =34
