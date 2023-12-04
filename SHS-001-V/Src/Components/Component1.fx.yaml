@@ -1,4 +1,17 @@
 Component1 As CanvasComponent:
+    Adminicon_menu: |-
+        =Table(
+            {
+                Title: "MyProfile(Admin)",
+                TargetScreen: 'MyProfile(Admin)'
+                
+            },
+            {
+                Title: "Log Out",
+                TargetScreen: 'Login Page'     
+                
+            }
+        )
     ComHeaderHeight: =Container1.Height
     CurrentScreen: ="Text"
     Fill: =RGBA(0, 0, 0, 0)
@@ -92,7 +105,7 @@ Component1 As CanvasComponent:
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Semibold
             Height: =52
-            OnSelect: =
+            OnSelect: =Set(ShowMenuadmin, !ShowMenuadmin)
             Size: =25
             Text: ="A"
             Width: =34
@@ -135,4 +148,34 @@ Component1 As CanvasComponent:
             Width: =280
             Y: =5
             ZIndex: =2
+
+    Gallery3 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =98
+        Items: =Component1.Adminicon_menu
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =true;
+            Navigate(
+                ThisItem.TargetScreen,
+                ScreenTransition.None
+            )
+        TemplateFill: =If(ThisItem.Title=Component1.CurrentScreen,Color.Aquamarine,Color.White)
+        TemplateSize: =39
+        Visible: =ShowMenuadmin
+        Width: =250
+        X: =1075
+        Y: =123
+        ZIndex: =3
+
+        Label31 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Title
+            Width: =210
+            X: =30
+            Y: =6
+            ZIndex: =1
 

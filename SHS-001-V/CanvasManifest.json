@@ -131,7 +131,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Study",
     "Login Page",
     "Dashboard",
     "Inbox",
@@ -146,11 +145,13 @@
     "Subfactors",
     "Questions",
     "Options",
+    "Study",
     "Settings",
     "HACT User",
     "Configuration",
     "Upload Result",
     "HACT Configuration",
+    "MyProfile(Admin)",
     "Administration(Res)",
     "Dashboard(C)",
     "Inbox(C)",
