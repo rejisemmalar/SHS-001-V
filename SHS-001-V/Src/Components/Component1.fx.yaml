@@ -1,4 +1,29 @@
 Component1 As CanvasComponent:
+    Adminicon_menu: |-
+        =Table(
+            {
+                Title: "MyProfile(Admin)",
+                TargetScreen: Dashboard
+                
+            },
+            {
+                Title: "Inbox",
+                TargetScreen: Inbox      
+                
+            },
+            {
+                Title: "Administration",
+                TargetScreen: Administration
+            },
+            {
+                Title: "Settings",
+                TargetScreen: Settings
+            },
+            {
+                Title: "Configuration",
+                TargetScreen: Configuration
+            }
+        )
     ComHeaderHeight: =Container1.Height
     CurrentScreen: ="Text"
     Fill: =RGBA(0, 0, 0, 0)
@@ -135,4 +160,16 @@ Component1 As CanvasComponent:
             Width: =280
             Y: =5
             ZIndex: =2
+
+    Gallery3 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =166
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =478
+        X: =887
+        Y: =123
+        ZIndex: =3
 
