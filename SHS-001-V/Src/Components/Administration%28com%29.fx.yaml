@@ -27,11 +27,11 @@
             },
             {
                 Title: "Options",
-                TargetScreen: App.ActiveScreen
+                TargetScreen: Options
             },
              {
                 Title: "Study",
-                TargetScreen: App.ActiveScreen
+                TargetScreen: Study
             }
         )
     Currentscreen: ="Text"
