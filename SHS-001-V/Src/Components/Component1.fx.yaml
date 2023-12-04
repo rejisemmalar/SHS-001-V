@@ -163,8 +163,8 @@ Component1 As CanvasComponent:
             )
         TemplateSize: =49
         Visible: =ShowMenuadmin
-        Width: =478
-        X: =887
+        Width: =319
+        X: =1007
         Y: =123
         ZIndex: =3
 
@@ -174,7 +174,7 @@ Component1 As CanvasComponent:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Title
             Width: =210
-            X: =153
-            Y: =21
+            X: =45
+            Y: =12
             ZIndex: =1
 
