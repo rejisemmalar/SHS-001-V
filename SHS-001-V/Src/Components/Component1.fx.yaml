@@ -155,6 +155,12 @@ Component1 As CanvasComponent:
         Items: =Component1.Adminicon_menu
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =true;
+            Navigate(
+                ThisItem.TargetScreen,
+                ScreenTransition.None
+            )
         TemplateSize: =76
         Visible: =ShowMenuadmin
         Width: =478
