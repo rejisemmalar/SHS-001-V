@@ -151,7 +151,7 @@ Component1 As CanvasComponent:
 
     Gallery3 As gallery.galleryVertical:
         DelayItemLoading: =true
-        Height: =117
+        Height: =98
         Items: =Component1.Adminicon_menu
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -162,10 +162,10 @@ Component1 As CanvasComponent:
                 ScreenTransition.None
             )
         TemplateFill: =If(ThisItem.Title=Component1.CurrentScreen,Color.Aquamarine,Color.White)
-        TemplateSize: =49
+        TemplateSize: =39
         Visible: =ShowMenuadmin
-        Width: =319
-        X: =1007
+        Width: =250
+        X: =1075
         Y: =123
         ZIndex: =3
 
@@ -175,7 +175,7 @@ Component1 As CanvasComponent:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Title
             Width: =210
-            X: =45
-            Y: =12
+            X: =30
+            Y: =6
             ZIndex: =1
 
