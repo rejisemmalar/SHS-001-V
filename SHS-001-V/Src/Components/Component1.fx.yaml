@@ -3,25 +3,13 @@ Component1 As CanvasComponent:
         =Table(
             {
                 Title: "MyProfile(Admin)",
-                TargetScreen: Dashboard
+                TargetScreen: 'MyProfile(Admin)'
                 
             },
             {
-                Title: "Inbox",
-                TargetScreen: Inbox      
+                Title: "Log Out",
+                TargetScreen: 'Login Page'     
                 
-            },
-            {
-                Title: "Administration",
-                TargetScreen: Administration
-            },
-            {
-                Title: "Settings",
-                TargetScreen: Settings
-            },
-            {
-                Title: "Configuration",
-                TargetScreen: Configuration
             }
         )
     ComHeaderHeight: =Container1.Height
